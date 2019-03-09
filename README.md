@@ -53,4 +53,5 @@ You can click on any tag to see all notes tagged under *that* tag
 
 ## Profile Settings
 Profile settings to see user details, change email and see notes and tags saved by particular user
+
 ![Profile Settings](results/ProfileSettings.png)
