@@ -27,11 +27,9 @@ Run this command to start the app:
 
 `python3 manage.py`
 
-Visit `0.0.0.0:5000` on your web browser
-
 Happy Noting :)
 
-Built with ♥ by [Sujeet Kumar Singh](powerfist01.github.io)
+Built with ♥ by [Sujeet Kumar Singh](https://powerfist01.github.io/)
 
 # Results
 
