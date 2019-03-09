@@ -31,7 +31,7 @@ Visit `0.0.0.0:5000` on your web browser
 
 Happy Noting :)
 
-Built with ♥ by [`Omkar Pathak`](http://www.omkarpathak.in/)
+Built with ♥ by [Sujeet Kumar Singh](powerfist01.github.io)
 
 # Results
 
