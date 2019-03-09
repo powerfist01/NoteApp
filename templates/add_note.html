@@ -1,0 +1,54 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            {% for message in form.note_title.errors %}
+                <div class="alert alert-danger">{{ message }}</div>
+            {% endfor %}
+
+            {% for message in form.note.errors %}
+                <div class="alert alert-danger">{{ message }}</div>
+            {% endfor %}
+
+            {% for message in form.tags.errors %}
+                <div class="alert alert-danger">{{ message }}</div>
+            {% endfor %}
+
+            {% for message in get_flashed_messages() %}
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                {{ message }}
+            </div>
+            {% endfor %}
+
+            <form method="POST" action="/notes/add/">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    {{ form.csrf_token }}
+                    <h3>{{ form.note_title.label }}</h3>
+                    <br>
+                    {{ form.note_title(class='form-control no_borders') }}
+                    <br>
+                    {% if form.tags %}
+                    <h3>{{ form.tags.label }}</h3>
+                    <br>
+                    {{ form.tags(class='form-control no_borders') }}</h3>
+                    {% endif %}
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="inline-headers">
+                        <h3> {{ form.note.label }} </h3>
+                        <h5>
+                            (Also supports Markdown. For markdown reference visit: <a href="https://en.support.wordpress.com/markdown-quick-reference/">here</a>)
+                        </h5>
+                    </div>
+                    <br>
+                    <!-- {{ form.note(class='form-control no_borders', cols="35", rows="20") }} -->
+                    {{ form.note(class='form-control no_borders', rows=15, cols="35") }}
+                    <br>
+                    {{ form.submit(class='form-control no_borders btn btn-primary') }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
