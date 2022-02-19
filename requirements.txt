@@ -9,9 +9,9 @@ Flask-WTF==0.14.2
 itsdangerous==0.24
 Jinja2
 Markdown==2.6.9
-MarkupSafe==1.0
+MarkupSafe==2.0.1
 python-dateutil==2.6.1
 pytz==2017.2
 six==1.11.0
-Werkzeug
+Werkzeug==0.16.1
 WTForms==2.1
