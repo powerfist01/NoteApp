@@ -13,5 +13,5 @@ MarkupSafe==2.0.1
 python-dateutil==2.6.1
 pytz==2017.2
 six==1.11.0
-Werkzeug==0.16.1
+Werkzeug==2.2.3
 WTForms==2.1
