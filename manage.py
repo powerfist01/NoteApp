@@ -18,13 +18,16 @@ from flask import Markup
 import utils.functions as functions
 import datetime
 import markdown
-import random
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 api = Api(app)
 pagedown = PageDown(app)
 parser = reqparse.RequestParser()
-app.secret_key = str(random.randint(1, 20))
+app.secret_key = os.getenv('SECRET_KEY')
 
 @app.route('/')
 def home_page():
