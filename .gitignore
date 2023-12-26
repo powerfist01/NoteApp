@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 notes.db
 .vscode
+*.pyc

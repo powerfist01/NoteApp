@@ -7,11 +7,12 @@ Flask-PageDown==0.2.2
 Flask-RESTful==0.3.6
 Flask-WTF==0.14.2
 itsdangerous==0.24
-Jinja2
+Jinja2==2.9.6
 Markdown==2.6.9
-MarkupSafe==2.0.1
+MarkupSafe==0.23
 python-dateutil==2.6.1
 pytz==2017.2
 six==1.11.0
 Werkzeug==0.16.1
 WTForms==2.1
+gunicorn==17.5

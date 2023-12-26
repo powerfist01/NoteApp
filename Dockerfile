@@ -1,0 +1,11 @@
+FROM python:2.7.9-slim
+
+ENV APP_HOME /app
+
+WORKDIR $APP_HOME
+
+COPY requirements.txt $APP_HOME
+
+RUN pip install -r requirements.txt
+
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "manage:app"]
