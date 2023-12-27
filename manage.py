@@ -21,7 +21,7 @@ import markdown
 import os
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv('.env')
 
 app = Flask(__name__)
 api = Api(app)

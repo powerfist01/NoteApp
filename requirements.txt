@@ -16,3 +16,4 @@ six==1.11.0
 Werkzeug==0.16.1
 WTForms==2.1
 gunicorn==17.5
+python-dotenv==0.5.1
