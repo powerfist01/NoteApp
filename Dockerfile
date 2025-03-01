@@ -8,4 +8,6 @@ COPY requirements.txt $APP_HOME
 
 RUN pip install -r requirements.txt
 
+COPY . $APP_HOME
+
 CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:4000", "manage:app"]
